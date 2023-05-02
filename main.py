@@ -2,7 +2,9 @@ from libs import screenlib
 
 while (0 == 0):
     screenlib.clear()
-    x = screenlib.quest_page()
-    if(x == 1):
+    screenlib.start_page()
+    char = input()
+    if(char == 'L' or char == "l"):
         screenlib.clear()
-        screenlib.end_page()
+        screenlib.end()
+

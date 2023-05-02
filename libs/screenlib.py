@@ -1,6 +1,5 @@
 from random import *
 from os import *
-import hashlib
 import platform
 import datetime
 
@@ -27,10 +26,11 @@ def about_page():
     print("Build id: ", release_id)
 
 
-def end_page():
+def end():
+    print("Connecting...")
     print()
-    print()
-    input("Please ENTER to contninue")
+    clear()
+    exit()
 
 
 def quest_page():
@@ -50,7 +50,7 @@ def start_page():
         print(" !!!Beta mode!!!")
     else:
         print()
-    print("You can connect to other servers via this")
+    print("You can connect to other servers via this console app")
     print("Select any host:")
     print()
     #for i in range()
