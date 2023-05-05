@@ -1,4 +1,3 @@
-from random import *
 from os import *
 import platform
 import datetime
@@ -33,6 +32,7 @@ def end():
     print("Connecting...")
     print()
     clear()
+    print("Local Terminal opened")
     exit()
 
 
@@ -61,3 +61,17 @@ def start_page():
         host.readline(i) 
     print("L. Local terminal")
     print("A. Add host")
+
+def new_host_page():
+    print("Enter IP, or domain name of the server")
+    print()
+    print()
+
+def host_credentials_page():
+    print("Enter valid username and password")
+    print()
+    print()
+
+if __name__ == '__main__':
+     print("You trying to run lib")
+     error()
