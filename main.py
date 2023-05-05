@@ -7,4 +7,5 @@ while (0 == 0):
     if(char == 'L' or char == "l"):
         screenlib.clear()
         screenlib.end()
-
+    #elif(char == 'A' or char == "a"):
+        
