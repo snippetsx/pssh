@@ -11,7 +11,6 @@ ver = 0.1
 
 beta = False
 
-host = open("hosts.ssh", "r")
 
 def clear():
     system('cls' if name == 'nt' else 'clear')
