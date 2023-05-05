@@ -3,6 +3,9 @@ from os import *
 import platform
 import datetime
 
+lines = sum(1 for line in open('hosts'))
+print(lines)
+
 release_id = 2
 
 ver = 0.1
@@ -43,6 +46,7 @@ def quest_page():
     elif(char == "No" or char == "no"):
         return 2;
 
+hosts = open("hosts", "r+")
 
 def start_page():
     print("Welcome to TermSSH manager, ver.", ver, end="")
@@ -53,6 +57,8 @@ def start_page():
     print("You can connect to other servers via this console app")
     print("Select any host:")
     print()
-    #for i in range()
+    for i in range(1, lines):
+        print(i, ".", " ", sep="", end="")
+        f.readline(i) 
     print("L. Local terminal")
     print("A. Add host")
