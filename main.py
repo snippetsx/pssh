@@ -1,7 +1,7 @@
 from libs import screenlib
 
-hosts = open("hosts.ssh", "r+")
-credentials = open("credentials.ssh", "r+")
+hosts = open("hosts.pssh", "r+")
+credentials = open("credentials.pssh", "r+")
 
 while (0 == 0):
     screenlib.clear()

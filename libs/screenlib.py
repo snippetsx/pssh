@@ -44,7 +44,7 @@ def quest_page():
     if (char == "Yes" or char == "yes"):
         return 1
     elif(char == "No" or char == "no"):
-        return 2;
+        return 2
 
 
 def start_page():
@@ -73,5 +73,4 @@ def host_credentials_page():
     print()
 
 if __name__ == '__main__':
-     print("You trying to run lib")
-     error()
+     print("Error: You trying to run lib")
