@@ -6,7 +6,7 @@ credentials = open("credentials.ssh", "r+")
 while (0 == 0):
     screenlib.clear()
     screenlib.start_page()
-    l = 1;
+    l = 1
     for line in hosts:
         print(l, ".",  " ", line, sep="", end="")
         l += 1
