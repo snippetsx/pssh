@@ -56,11 +56,21 @@ def start_page():
     print("You can connect to other servers via this console app")
     print("Select any host:")
     print()
-    for i in range(1, lines):
-        print(i, ".", " ", sep="", end="")
-        host.readline(i) 
     print("L. Local terminal")
     print("A. Add host")
+    print("G. Guest connection")
+
+def guest_connection_host():
+    print("This is guest connection")
+    print("Enter IP or domain name:")
+    print()
+    print()
+
+def guest_connection_credentials():
+    print("This is guest connection")
+    print("Enter username and password")
+    print()
+    print()
 
 def new_host_page():
     print("Enter IP, or domain name of the server")

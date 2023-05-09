@@ -1,4 +1,6 @@
 from libs import screenlib
+from libs import sshconnect
+import getpass
 
 hosts = open("hosts.pssh", "r+")
 credentials = open("credentials.pssh", "r+")
@@ -18,13 +20,23 @@ while (0 == 0):
     elif(char == 'A' or char == "a"):
         screenlib.clear()
         screenlib.new_host_page()
-        s = input()
-        print(s, file=hosts, end="\n")
+        host = input()
+        print(host, file=hosts, end="\n")
         screenlib.clear()
         screenlib.host_credentials_page()
-        s = input('Enter username, e.g. "root": ')
-        s1 = input('Enter password, e.g. "12345678": ')
-        print(s, s1, sep="@", file=credentials, end="\n")
+        user = input('Enter username, e.g. "user": ')
+        pss = getpass.getpass('Enter password, e.g. "12345678": ')
+        print(user, pss, sep="@", file=credentials, end="\n")
+    elif(char == 'G' or char == 'g'):
+        screenlib.clear()
+        screenlib.guest_connection_host()
+        host = input()
+        screenlib.guest_connection_credentials()
+        user = input('Enter username, e.g. "user": ')
+        pss = getpass.getpass('Enter password, e.g. "12345678": ')
+        ssh 
+
+
 
 
 
