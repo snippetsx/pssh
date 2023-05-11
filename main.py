@@ -34,7 +34,7 @@ while (0 == 0):
         screenlib.guest_connection_credentials()
         user = input('Enter username, e.g. "user": ')
         pss = getpass.getpass('Enter password, e.g. "12345678": ')
-        ssh 
+        
 
 
 
