@@ -2,8 +2,8 @@ from libs import screenlib
 from libs import sshconnect
 import getpass
 
-hosts = open("hosts.pssh", "r+")
-credentials = open("credentials.pssh", "r+")
+hosts = open("config/hosts.pssh", "r+")
+credentials = open("config/credentials.pssh", "r+")
 
 while (0 == 0):
     screenlib.clear()
