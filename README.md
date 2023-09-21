@@ -1,5 +1,5 @@
-# SSH session manager (Python, curses)
+# SSH session manager (Python)
 
 SSH session manager via Python.
-Install this package on Central Server fnd manage SSH connections.
+Install this package on Central Server for managing SSH connections.
 
